@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#qr-code{
+   
+    width: 45%;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+
+}
+#qr-code .qr-code-h2{
+    color: crimson;
+    padding-top: 20px;
+}
+#qr-code  input{
+    height: 5vh;
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
+}
+#qr-code #button{
+    height: 5vh;
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
+    background: crimson;
+    color: #f1f1f1;
+    border: none;
+    margin-bottom: 20px;
+}
+#qr-code #qr-img{
+    margin-bottom: 15px;
+}
+@media (max-width : 650px ) {
+    #qr-code .qr-code-h2{
+    font-size: medium;
+    }
+}
+@media (max-width : 550px ) {
+    #qr-code #button{
+       font-size: 10px;
+    }
+}
+@media (max-width : 420px ) {
+    #qr-code  input{
+       font-size: 12px;
+    }
+
+    #qr-code #button{
+       font-size: 8px;
+    }
+}
+@media (max-width : 350px ) {
+    #qr-code .qr-code-h2{
+        font-size: small;
+        }
+
+    #qr-code  input{
+       font-size: 10px;
+    }
+
+    #qr-code #button{
+       font-size: 7px;
+    }
+}
